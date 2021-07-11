@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#text-container{
+    display: flex;
+    flex-direction: column;
+    margin: 75px auto auto 19px;
+}
+
+#text-container h1{
+    font-family: 'PT Serif', sans-serif;  
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    color: #000000;
+}
+
+#text-container h2{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#text-container p{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+#image-container{
+    display: grid;
+    grid-template-rows: 261px 261px 261px;
+    grid-template-columns: 138px 138px;
+    column-gap: 64px;
+    row-gap: 19px 27px;
+    margin:0px 19px auto 24px;
+    justify-content: center;
+}
+
+.imageA{
+    width: 175px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageB{
+    padding-top: 45px;
+    width: 175px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageA img{
+    width: 150px;
+}
+.imageB img{
+    width: 150px;
+}
+
+.sidewaystext{
+    font-family: 'Pt Serif', sans-serif;
+    font-size: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.name{
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#footer{
+    display: flex;
+    justify-content : center;
+}
+
+#footer p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 130px auto 24px auto;
+    color:#A9A9A9;
+}
+
+
+/* To make screens smaller than 375px responsive */
+@media screen and (max-width: 375px){
+    
+    #image-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/* To make screens larger than 650px responsive */
+@media screen and (min-width: 650px) {
+    #image-container{
+        display: grid;
+        grid-template-rows: 426px 426px;
+        grid-template-columns: 238px 238px 238px;
+        column-gap: 64px;
+        row-gap: 19px 27px;
+        margin:0px 19px auto 24px;
+        justify-content: center;
+    }
+    
+    .imageA{
+        width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .imageB{
+        padding-top: 45px;
+        width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imageA img{
+        width: 238px;
+    }
+    .imageB img{
+        width: 238px;
+    }
+}
